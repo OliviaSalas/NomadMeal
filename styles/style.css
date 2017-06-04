@@ -1,0 +1,295 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Avenir';
+	src:url('../fonts/avenir-next-condensed.ttc');
+}
+
+@font-face {
+	font-family: 'Gill Sans';
+	src:url('../fonts/GillSansStd-Bold.otf');
+	font-weight: bolder;
+}
+
+@font-face {
+	font-family: 'Gill Sans';
+	src:url('../fonts/GillSans.ttc');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Gill Sans';
+	src:url('../fonts/GillSansStd-BoldItalic.otf');
+	font-weight: bolder;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gill Sans';
+	src:url('../fonts/GillSansStd-Italic.otf');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Gill Sans';
+	src:url('../fonts/GillSansStd-Light.otf');
+	font-weight: lighter;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*:before,
+*:after {
+	font-family: 'Gill Sans', sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: ' ';
+}
+.cf:after {
+  clear: both;
+}
+
+/* ---- Header main---- */
+.home-body h1 {
+	margin: 5%;
+	font-family: 'Avenir', sans-serif;
+	font-size: 2.5em;
+}
+
+header {
+	margin-bottom: 5%;
+}
+
+.home-body nav {
+	margin: 0 0 0 5%;
+}
+
+.home-body nav ul li {
+	display: inline-block;
+	margin-right: 5%;
+	font-family: 'Avenir', sans-serif;
+	font-size: 1.3em;
+}
+
+.home-body header section {
+	float: left;
+	width: 30%;
+	margin: 5%;
+}
+
+.home-body header section h2 {
+	font-family: 'Avenir', sans-serif;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	color: #c0c0c0;
+}
+
+.home-body header section h3 {
+	margin-bottom: 5%;
+	font-family: 'Gill Sans', sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+.home-body header section h3+p {
+	margin-bottom: 8%;
+	font-family: 'Gill Sans', sans-serif;
+	font-weight: lighter;
+}
+
+.home-body header section a {
+	margin: 3% 0;
+	padding: 1% 5%;
+	font-family: 'Avenir', sans-serif;
+	background: #febf04; /* Old browsers */
+	background: -moz-linear-gradient(left, #febf04 0%, #ffd65e 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #febf04 0%,#ffd65e 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #febf04 0%,#ffd65e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border-radius: 100px;
+	color: #fff;
+}
+
+.home-body header figure {
+	float: left;
+	width: 30%;
+	margin: 5% 5% 0 22%;
+	background: #aaa;
+}
+
+
+/* ---- Home main ---- */
+.home-body main {
+	margin: 5%;
+}
+/* ------- Section decouvrir ------- */
+.discover {
+	background: url('../img-layout/img-camion.jpg');
+	background-size: cover;
+	height: 63vh;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.discover h2,
+.discover h3 {
+	margin-right: 5%;
+	font-family: 'Gill Sans', sans-serif;
+	font-size: 2.2em;
+	color: #fff;
+}
+
+.discover h2 {
+	font-weight: lighter;
+}
+
+.discover h3 {
+	font-weight: bolder;
+}
+
+.discover a {
+	margin: 5% 5% 3% 0;
+	padding: 1% 5%;
+	background: #fff;	
+	font-family: 'Avenir', sans-serif;
+	border-radius: 100px;
+}
+
+/* ------- Section partenaires ------- */
+.partners {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 5% 0;
+}
+
+/* ------- Section download ------- */
+.download {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-bottom: 5%;
+}
+
+.stores {
+	width: 30%;
+}
+
+.download h3 {
+	font-family: 'Gill Sans', sans-serif;
+	font-size: 1.4em;
+}
+
+.download h3 span {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+.dl { float: left; }
+
+.stores-desc { width: 55%; }
+
+.stores-desc p>span {font-weight: bold;}
+
+/* ------- Section approch ------- */
+.approch {
+	display: flex;
+	justify-content: space-around;
+}
+
+.approch figure {
+	box-shadow: 10px 10px 5px #888888;
+	padding: 5%;
+	margin: 0 10% 10% 10%;
+}
+
+.approch h2 {	
+	font-family: 'Avenir', sans-serif;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	color: #c0c0c0;
+}
+
+/* ---- Footer ---- */
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background: #febf04; /* Old browsers */
+	background: -moz-linear-gradient(left, #febf04 0%, #ffd65e 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #febf04 0%,#ffd65e 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #febf04 0%,#ffd65e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	font-family: 'Gill Sans', sans-serif;
+	padding-bottom: 5%;
+	color: #fff;
+}
+
+footer section {
+	width: 20%;
+	margin: 1%;
+}
+
+footer section p a{
+	color: #fff;
+}
+
+hr {
+	
+	color: #fff;
+}

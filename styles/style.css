@@ -280,16 +280,28 @@ footer {
 	color: #fff;
 }
 
+footer .container {
+	margin-top: 4%;
+	border-top: 1px solid #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
 footer section {
 	width: 20%;
 	margin: 1%;
+}
+
+footer .container section h3 {
+	font-weight: bolder;
+	text-transform: capitalize;
 }
 
 footer section p a{
 	color: #fff;
 }
 
-hr {
-	
-	color: #fff;
+footer .credits {
+	margin-top: 2%;
 }

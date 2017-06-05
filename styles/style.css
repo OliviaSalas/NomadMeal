@@ -187,6 +187,7 @@ header li a {
 
 #objectif .visuals img {
   display: block;
+	max-width: 100%;
 }
 
 #objectif span {
@@ -532,6 +533,44 @@ footer .credits {
 	.discover {
 		text-align: center;
 	}
+}
 
+@media screen and (max-width: 580px) {
+
+	#objectif .visuals {
+		float: none;
+		width: 100%;
+	}
+
+	#objectif {
+		width: 100%;
+	}
+
+	#objectif .caption {
+		float: none;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	#objectif h3 {
+		font-size: 1em;
+	}
+
+	.discover a {
+		margin: 5% 5% 3% 0;
+		padding: 3% 7.5% 2% 7.5%;
+	}
+
+	.home-body .dl {
+			margin-top: 10%;
+	}
+
+	#download .stores-desc {
+		margin-top: 1em;
+	}
+
+	#newsletter .visuals {
+		margin-bottom: 1em;
+	}
 
 }

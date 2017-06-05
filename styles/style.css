@@ -528,16 +528,18 @@ footer {
 }
 
 footer .container {
-	margin: 4% 5% 0 5%;
+	padding-top: 2%;
+	margin: 4% 5% 0 7%;
 	border-top: 1px solid #fff;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
-footer section {
+footer.foo {
 	width: 20%;
 	margin: 1%;
+	padding-left: 2%;
 }
 
 footer .container section h3 {
@@ -552,6 +554,7 @@ footer section p a{
 footer .credits {
 	margin-top: 2%;
 }
+
 
 /* ->->->->->->->->->->->-> RESPONSIVE HOME.HTML <-<-<-<-<-<-<-<-<-<-<- */
 @media screen and (max-width: 1350px) {
@@ -674,3 +677,18 @@ footer .credits {
 		margin-top: 22%;
 	}	
 }
+
+/* ->->->->->->->->->->->-> RESPONSIVE FOOTER <-<-<-<-<-<-<-<-<-<-<- */
+
+@media screen and (max-width: 650px) {
+	footer .container {
+	margin: 4% 5% 0 5%;
+	  }
+	.container .foo {
+		display: inline-block;
+		width: 35%;
+    	margin: 15px;
+  	
+	}
+}
+

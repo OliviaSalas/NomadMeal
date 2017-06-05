@@ -552,8 +552,12 @@ footer .credits {
 		margin: 0 auto;
 	}
 
+	#objectif h2 {
+		font-size: 1.2em;
+	}
+
 	#objectif h3 {
-		font-size: 1em;
+		font-size: 1.6em;
 	}
 
 	.discover a {

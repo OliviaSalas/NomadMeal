@@ -105,21 +105,17 @@ a {
 }
 
 /* ---- Header main---- */
-.home-body h1 {
-	margin: 5%;
+header h1 {
+	margin: 3% 0 4% 5%;
 	font-family: 'Avenir', sans-serif;
 	font-size: 2.5em;
 }
 
-header {
-	margin-bottom: 5%;
-}
+header { margin-bottom: 5%; }
 
-.home-body nav {
-	margin: 0 0 0 5%;
-}
+header nav { margin: 0 0 0 5%; }
 
-.home-body nav ul li {
+header nav ul li {
 	display: inline-block;
 	margin-right: 5%;
 	font-family: 'Avenir', sans-serif;
@@ -167,15 +163,17 @@ header {
 .home-body header figure {
 	float: left;
 	width: 30%;
-	margin: 5% 5% 0 22%;
+	margin: 5% 0 0 22%;
 	background: #aaa;
+}
+
+.home-body header figure img {
+	width: 68%;
 }
 
 
 /* ---- Home main ---- */
-.home-body main {
-	margin: 5%;
-}
+.home-body main { margin: 5%; }
 /* ------- Section decouvrir ------- */
 .discover {
 	background: url('../img-layout/img-camion.jpg');
@@ -195,13 +193,9 @@ header {
 	color: #fff;
 }
 
-.discover h2 {
-	font-weight: lighter;
-}
+.discover h2 { font-weight: lighter; }
 
-.discover h3 {
-	font-weight: bolder;
-}
+.discover h3 { font-weight: bolder; }
 
 .discover a {
 	margin: 5% 5% 3% 0;
@@ -227,9 +221,7 @@ header {
 	margin-bottom: 5%;
 }
 
-.stores {
-	width: 30%;
-}
+.stores { width: 30%; }
 
 .download h3 {
 	font-family: 'Gill Sans', sans-serif;
@@ -241,11 +233,27 @@ header {
 	font-weight: bold;
 }
 
-.dl { float: left; }
+.home-body .dl {
+	float: left;
+	margin-right: 8%;
+	margin-top: 10%
+}
+
+.home-body .dl>a {
+	display: block;
+	border: 1px solid #333;
+	border-radius: 100px;
+	z-index: 8000;
+}
+
+.home-body .dl>a+p {
+	margin-top: 15%;
+	text-align: center;
+}
 
 .stores-desc { width: 55%; }
 
-.stores-desc p>span {font-weight: bold;}
+.stores-desc p>span { font-weight: bold; }
 
 /* ------- Section approch ------- */
 .approch {
@@ -266,6 +274,29 @@ header {
 	color: #c0c0c0;
 }
 
+/* ---- About main ---- */
+.app-presentation {
+	background: url('../img-layout/about-mockup-second.png') center no-repeat;
+	/* background-size: cover; */
+	height: 50vh;
+}
+
+.app-presentation h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 2.5em;
+}
+
+.app-presentation .dl {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3%;
+	font-size: 1.2em;
+}
 /* ---- Footer ---- */
 footer {
 	display: flex;
@@ -281,7 +312,7 @@ footer {
 }
 
 footer .container {
-	margin-top: 4%;
+	margin: 4% 5% 0 5%;
 	border-top: 1px solid #fff;
 	display: flex;
 	flex-wrap: wrap;

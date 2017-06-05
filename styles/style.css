@@ -433,6 +433,7 @@ header li a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 5%;
 }
 
 .contact-body h2 {
@@ -456,6 +457,11 @@ header li a {
 .contact-body form label {
 	font-size: 1.2em;
 	font-weight: bold;
+}
+
+.contact-body form input {
+	height: 8%;
+	font-size: 1.2em;
 }
 
 .contact-body form input,
@@ -545,6 +551,7 @@ footer .credits {
 	margin-top: 2%;
 }
 
+/* ->->->->->->->->->->->-> RESPONSIVE HOME.HTML <-<-<-<-<-<-<-<-<-<-<- */
 @media screen and (max-width: 1350px) {
 
 	#newsletter .caption {
@@ -567,3 +574,6 @@ footer .credits {
 		width: 100%;
 	}
 }
+/* ->->->->->->->->->->->-> RESPONSIVE CONTACT.HTML <-<-<-<-<-<-<-<-<-<-<- */
+
+

@@ -36,7 +36,7 @@
 	font-weight: lighter;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -55,8 +55,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -67,12 +67,13 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
 	line-height: 1;
+	overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -95,6 +96,10 @@ a {
 	color: #000;
 }
 
+p {
+	line-height: 1.5;
+}
+
 .cf:before,
 .cf:after {
   display: table;
@@ -104,54 +109,114 @@ a {
   clear: both;
 }
 
+.return {
+	display: block;
+}
+
 /* ---- Header main---- */
 header h1 {
-	margin: 3% 0 4% 5%;
-	font-family: 'Avenir', sans-serif;
-	font-size: 2.5em;
+	width: 120px;
+	display: inline-block;
 }
 
-header { margin-bottom: 5%; }
+h1 a img {
+	width: 100%;
+}
 
-header nav { margin: 0 0 0 5%; }
+header {
+	position: absolute;
+	top: 5%;
+	width: 80%;
+	margin-left: 10%;
+}
 
-header nav ul li {
+header nav {
+	float: right;
+}
+
+header li {
 	display: inline-block;
-	margin-right: 5%;
 	font-family: 'Avenir', sans-serif;
 	font-size: 1.3em;
+	margin-left: 1em;
 }
 
-.home-body header section {
-	float: left;
-	width: 30%;
-	margin: 5%;
+header li a {
+	text-transform: uppercase;
 }
 
-.home-body header section h2 {
+/* ---- home header ---- */
+
+#objectif {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 9em;
+}
+
+#objectif h2 {
+	margin-bottom: .6em;
 	font-family: 'Avenir', sans-serif;
 	font-size: 1.5em;
 	text-transform: uppercase;
 	color: #c0c0c0;
 }
 
-.home-body header section h3 {
+#objectif h3 {
+	line-height: 1.2;
 	margin-bottom: 5%;
 	font-family: 'Gill Sans', sans-serif;
 	font-size: 2em;
 	font-weight: bold;
 }
 
-.home-body header section h3+p {
+#objectif .caption {
+  width: 40%;
+  float: left;
+  transform: translateY(45%);
+}
+
+#objectif .visuals {
+  position: relative;
+  width: 50%;
+  float: right;
+}
+
+#objectif .visuals .first {
+  float: right;
+}
+
+#objectif .visuals img {
+  display: block;
+}
+
+#objectif span {
+  position: absolute;
+  display: block;
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  z-index: -1;
+  right: 0;
+  background: #F1F1F1;
+}
+
+#objectif h3+p {
 	margin-bottom: 8%;
 	font-family: 'Gill Sans', sans-serif;
 	font-weight: lighter;
 }
 
-.home-body header section a {
-	margin: 3% 0;
-	padding: 1% 5%;
-	font-family: 'Avenir', sans-serif;
+#objectif p {
+  width: 70%;
+}
+
+#objectif a {
+	padding: .4em 2em;
+	font-family: 'Gill Sans', sans-serif;
+	font-weight: bolder;
+	letter-spacing: .5px;
+	font-size: 1.1em;
 	background: #febf04; /* Old browsers */
 	background: -moz-linear-gradient(left, #febf04 0%, #ffd65e 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(left, #febf04 0%,#ffd65e 100%); /* Chrome10-25,Safari5.1-6 */
@@ -160,25 +225,13 @@ header nav ul li {
 	color: #fff;
 }
 
-.home-body header figure {
-	float: left;
-	width: 30%;
-	margin: 5% 0 0 22%;
-	background: #aaa;
-}
 
-.home-body header figure img {
-	width: 68%;
-}
-
-
-/* ---- Home main ---- */
-.home-body main { margin: 5%; }
 /* ------- Section decouvrir ------- */
 .discover {
 	background: url('../img-layout/img-camion.jpg');
 	background-size: cover;
 	height: 63vh;
+	margin-top: 5em;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -191,57 +244,60 @@ header nav ul li {
 	font-family: 'Gill Sans', sans-serif;
 	font-size: 2.2em;
 	color: #fff;
+	line-height: 1.2;
 }
 
 .discover h2 { font-weight: lighter; }
-
 .discover h3 { font-weight: bolder; }
 
 .discover a {
-	margin: 5% 5% 3% 0;
+	margin: 2% 5% 3% 0;
 	padding: 1% 5%;
-	background: #fff;	
-	font-family: 'Avenir', sans-serif;
+	background: #fff;
 	border-radius: 100px;
-}
-
-/* ------- Section partenaires ------- */
-.partners {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	padding: 5% 0;
+	font-style: italic;
+	font-weight: bolder;
+	letter-spacing: .7px;
 }
 
 /* ------- Section download ------- */
-.download {
+#download {
+	width: 80%;
+	margin: 5em auto 5% auto;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	margin-bottom: 5%;
+	justify-content: space-between;
+	padding: 5em 0;
 }
 
-.stores { width: 30%; }
+.stores {
+	width: 30%;
+}
 
-.download h3 {
+#download h3 {
 	font-family: 'Gill Sans', sans-serif;
 	font-size: 1.4em;
 }
 
-.download h3 span {
+#download h3 span {
 	font-size: 1.8em;
 	font-weight: bold;
+	padding-bottom: .3em;
 }
 
 .home-body .dl {
 	float: left;
-	margin-right: 8%;
-	margin-top: 10%
+	margin-top: 10%;
+	margin-right: 2em;
+}
+
+.dl img {
+	border-radius: 100px;
+	box-shadow: 0 0 11px 0 rgba(160, 160, 160, 0.2);
 }
 
 .home-body .dl>a {
 	display: block;
-	border: 1px solid #333;
 	border-radius: 100px;
 	z-index: 8000;
 }
@@ -249,29 +305,78 @@ header nav ul li {
 .home-body .dl>a+p {
 	margin-top: 15%;
 	text-align: center;
+	font-style: italic;
 }
 
-.stores-desc { width: 55%; }
+.stores-desc {
+	font-size: 21px;
+	width: 40%;
+}
 
-.stores-desc p>span { font-weight: bold; }
 
 /* ------- Section approch ------- */
-.approch {
-	display: flex;
-	justify-content: space-around;
+
+#newsletter {
+	width: 80%;
+	margin: 0 auto 3em auto;
 }
 
-.approch figure {
-	box-shadow: 10px 10px 5px #888888;
-	padding: 5%;
-	margin: 0 10% 10% 10%;
+#newsletter .visuals {
+	width: 40%;
+	float: left;
 }
 
-.approch h2 {	
+#newsletter .caption {
+	width: 50%;
+	float: right;
+	transform: translateY(40%);
+}
+
+#newsletter .visuals img {
+	max-width: 100%;
+}
+
+#newsletter h2 {
 	font-family: 'Avenir', sans-serif;
 	font-size: 1.2em;
 	text-transform: uppercase;
 	color: #c0c0c0;
+	margin-bottom: .5em;
+}
+
+#newsletter p {
+	width: 80%;
+	font-size: 1.3em;
+}
+
+#newsletter form {
+	width: 70%;
+	margin-top: 2em;
+}
+
+#newsletter input[type="email"] {
+	display: block;
+	border: none;
+	background: #F1F1F1;
+	padding: .7em 1em .4em 1em;
+	width: 70%;
+	float: left;
+	font-size: 17px;
+	font-family: 'Gill Sans', sans-serif;
+}
+
+#newsletter input[type="submit"] {
+	border: none;
+	width: 20%;
+	padding: .7em 0 .4em 0;
+	font-size: 17px;
+	float: left;
+	display: block;
+	background-image: linear-gradient(84deg, #ffb347, #ffcc33);
+	color: #fff;
+	font-weight: bold;
+	font-style: italic;
+	letter-spacing: .6px;
 }
 
 /* ---- About main ---- */

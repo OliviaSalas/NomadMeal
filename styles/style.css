@@ -297,6 +297,28 @@ header nav ul li {
 	margin-top: 3%;
 	font-size: 1.2em;
 }
+
+/* ---- About main ---- */
+.mentions-body main {
+	margin: 5%;
+}
+
+.mentions-body h2 {
+	font-size: 2.2em;
+	margin-bottom: 5%;
+	font-weight: bolder;
+}
+
+.mentions-body h3 {
+	font-size: 1.8em;
+	font-weight: bold;
+	margin: 3% 0 1.5% 0;
+}
+
+.mentions-body p {
+	font-size: 1.2em;
+}
+
 /* ---- Footer ---- */
 footer {
 	display: flex;

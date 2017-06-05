@@ -326,6 +326,7 @@ header nav ul li {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 5%;
 }
 
 .contact-body h2 {
@@ -349,6 +350,11 @@ header nav ul li {
 .contact-body form label {
 	font-size: 1.2em;
 	font-weight: bold;
+}
+
+.contact-body form input {
+	height: 8%;
+	font-size: 1.2em;
 }
 
 .contact-body form input,
@@ -437,3 +443,20 @@ footer section p a{
 footer .credits {
 	margin-top: 2%;
 }
+
+/* ->->->->->->->->->->->-> RESPONSIVE CONTACT.HTML <-<-<-<-<-<-<-<-<-<-<- */
+/* @media screen and (min-width: 921px) {
+	.contact-body main {
+		margin: 5%;
+	}
+}
+
+@media screen and (max-width: 920px) {
+	.contact-body main {
+		margin: 5%;
+	}
+}
+
+
+@media screen and (max-width: 550px) {
+ */

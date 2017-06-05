@@ -319,6 +319,85 @@ header nav ul li {
 	font-size: 1.2em;
 }
 
+
+/* ---- Contact main ---- */
+.contact-body main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-body h2 {
+	font-size: 2.2em;
+	margin-bottom: 5%;
+	font-weight: bolder;
+}
+
+.contact-body p {
+	font-size: 1.2em;
+	margin-bottom: 5%;
+	font-weight: lighter;
+}
+
+.contact-body form {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+.contact-body form label {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.contact-body form input,
+.contact-body form label,
+.contact-body form textarea {
+	width: 100%;
+}
+
+.contact-body form input,
+.contact-body form textarea {
+	margin: 2% 0 4% 0;
+}
+
+#mandatory-fields {
+	font-size: 1em;
+}
+
+.contact-body input[type="submit"] {
+	align-self: center;
+	background: #00b7ea; /* Old browsers */
+	background: -moz-linear-gradient(left, #00b7ea 0%, #009ec3 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #00b7ea 0%,#009ec3 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #00b7ea 0%,#009ec3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	color: #fff;
+	font-weight: bolder;
+	font-size: 1.2em;
+	padding: 2% 5%;
+	width: 25%;
+	text-align: center;
+	border-radius: 25px;
+	border: 0;
+}
+
+.contact-body input[type="submit"]:hover {
+	cursor: pointer;
+	background: #a9e4f7; /* Old browsers */
+	background: -moz-linear-gradient(left, #a9e4f7 0%, #0fb4e7 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #a9e4f7 0%,#0fb4e7 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #a9e4f7 0%,#0fb4e7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	transition: 1s;
+	color: #fff;
+}
+
+#contact-footer {
+	background: #00b7ea; /* Old browsers */
+	background: -moz-linear-gradient(left, #00b7ea 0%, #009ec3 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #00b7ea 0%,#009ec3 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #00b7ea 0%,#009ec3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
 /* ---- Footer ---- */
 footer {
 	display: flex;

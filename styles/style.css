@@ -437,7 +437,7 @@ header li a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 5%;
+	margin: 10% 5% 5% 5%;
 }
 
 .contact-body h2 {
@@ -465,6 +465,10 @@ header li a {
 
 .contact-body form input {
 	height: 8%;
+	font-size: 1.2em;
+}
+
+.contact-body form textarea {
 	font-size: 1.2em;
 }
 
@@ -665,5 +669,14 @@ footer .credits {
 
 }
 /* ->->->->->->->->->->->-> RESPONSIVE CONTACT.HTML <-<-<-<-<-<-<-<-<-<-<- */
+@media screen and (max-width: 1100px){
+	.contact-body main {
+		margin-top: 15%;
+	}	
+}
 
-
+@media screen and (max-width: 750px){
+	.contact-body main {
+		margin-top: 22%;
+	}	
+}

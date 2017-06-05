@@ -265,13 +265,12 @@ header li a {
 	width: 80%;
 	margin: 5em auto 5% auto;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 	padding: 5em 0;
 }
 
-.stores {
-	width: 30%;
+#download .stores {
+	width: 50%;
+	float: left;
 }
 
 #download h3 {
@@ -308,9 +307,10 @@ header li a {
 	font-style: italic;
 }
 
-.stores-desc {
+#download .stores-desc {
 	font-size: 21px;
-	width: 40%;
+	width: 50%;
+	float: right;
 }
 
 
@@ -329,7 +329,7 @@ header li a {
 #newsletter .caption {
 	width: 50%;
 	float: right;
-	transform: translateY(40%);
+	padding-top: 6%;
 }
 
 #newsletter .visuals img {
@@ -358,8 +358,9 @@ header li a {
 	display: block;
 	border: none;
 	background: #F1F1F1;
-	padding: .7em 1em .4em 1em;
-	width: 70%;
+	padding: .7em 0 .4em 1em;
+	box-sizign: border-box;
+	width: 65%;
 	float: left;
 	font-size: 17px;
 	font-family: 'Gill Sans', sans-serif;
@@ -367,8 +368,9 @@ header li a {
 
 #newsletter input[type="submit"] {
 	border: none;
-	width: 20%;
+	width: 29%;
 	padding: .7em 0 .4em 0;
+	box-sizing: border-box;
 	font-size: 17px;
 	float: left;
 	display: block;
@@ -541,4 +543,27 @@ footer section p a{
 
 footer .credits {
 	margin-top: 2%;
+}
+
+@media screen and (max-width: 1350px) {
+
+	#newsletter .caption {
+		padding-top: 3%;
+	}
+
+	#newsletter p {
+		width: 100%;
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (max-width: 1064px) {
+
+	#newsletter .caption,
+	#newsletter .visuals,
+	#download .stores,
+	#download .stores-desc {
+		float: none;
+		width: 100%;
+	}
 }
